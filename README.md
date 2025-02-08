@@ -1,1 +1,552 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sonu Kumar Sharma</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="connect.html">Let's Connect</a></li>
+                        <li><a href="ai-tools.html">AI Tools</a></li>
+                    </ul>                    
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/Picsart_25-02-05_21-50-37-389.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">Software Engineer</span></h5>
+                    <h1>Sonu Kumar Sharma</h1>
+                    <p>Hi, I am Sonu, a passionate Software Engineer skilled in C++, Python, and Java, with experience in web development and AI/ML. I specialize in building efficient, scalable, and AI-powered applications while optimizing performance and solving complex problems. With strong problem-solving skills, leadership, and adaptability, I am committed to creating innovative and impactful software solutions.</p>
+
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1UzzTLRLOeUuFg03bzyXT1bk4iPMvxDgm/view?usp=drivesdk" class="btn active" target="_blank">Download CV</a>
+                        <a href="mailto:sonusharmasks14@gmail.com" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/share/18WDgPBbRF/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/sonu-kumar-sharma-ab8a07260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/imsonusks14?igsh=MTJ4Z2hhYXU3dDF3dA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/imsonusks?t=FNJSRGlznK285-O2uCi8Ww&s=09"><i class="fa-brands fa-x"></i></a>
+                        <a href="https://github.com/Golu1464"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Projects Section -->
+     <main>
+        <section class="projects">
+            <h1>My Projects</h1>
+            <div class="project-cards-container">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="images/20250208_133936.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h2>"J.A.R.V.I.S"</h2>
+                        <p>Jarvis is a personal AI assistant built using Python that can process voice commands. It can perform tasks like opening websites, playing music, reading news headlines, and answering queries using OpenAI's GPT-3.5. Jarvis communicates through text-to-speech and integrates speech recognition to listen for commands, making it an interactive virtual assistant.</p>
+                        <a href="https://github.com/Golu1464/JARVIS" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="images/20250208_133806.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h2>Chat Bot</h2>
+                        <p>This script automates copying chat history, analyzing it with OpenAI's GPT-3.5, and generating funny responses. Using `pyautogui` for automation and `pyperclip` for clipboard actions, it personifies "Naruto" to roast people humorously based on the chat, then automatically pastes and sends the response.</p>
+                        <a href="https://github.com/Golu1464/Chat-Bot" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="images/20250208_134140.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h2>Shopping</h2>
+                        <p>This Shopping Cart System is a C++ program that simulates an e-commerce shopping experience. It allows customers to select products, choose from available brands, add items to their cart, and calculate the total bill. The system tracks products, brands, and their prices, while also providing a user-friendly interface for managing the shopping process.</p>
+                        <a href="https://github.com/Golu1464/Shopping" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/20250208_134224.jpg" alt="Project 4">
+                    <div class="project-info">
+                        <h2>ParkingLot</h2>
+                        <p>This Parking Lot Management System is a Java program that simulates a parking lot with multiple floors and slots. It allows users to park vehicles, check parking availability, and track vehicle locations. The system is implemented with a graphical user interface (GUI) using Java's AWT library.</p>
+                        <a href="https://github.com/Golu1464/Parking-System" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/20250208_134048.jpg" alt="Project 5">
+                    <div class="project-info">
+                        <h2>Student Diary</h2>
+                        <p>The Student Grade Tracker is a C++ application for managing and analyzing student grades. It allows users to add students, update their grades, calculate averages, and generate reports based on the performance of individual students or subjects. The system is built to help educators or administrators keep track of student performance and make informed decisions based on the collected data.</p>
+                        <a href="https://github.com/Golu1464/Student-Diary" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Main Career Section -->
+     <main>
+        <section class="career">
+            <h1>Career Overview</h1>
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Web development and Hosting Internship (Online)</h3>
+                    <p><strong>Company:</strong> GauravGo Games Technology PVT | <strong>Duration:</strong> Oct 2023 - Nov 2023</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Developed websites and web applications, including creating responsive layouts and user-friendly interfaces.</li>
+                        <li>Built and maintained personal and company portfolios, ensuring they were up-to-date and well-organized.</li>
+                        <li>Handled web hosting setup and configuration, including domain registration and deployment to servers.</li>
+                        <li>Optimized websites for speed and scalability, improving load times and enhancing user experience.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Artificial Intelligence Internship (Online)</h3>
+                    <p><strong>Company:</strong> Slash Mark IT Startup X AICTE | <strong>Duration:</strong> May 2024 - June 2024</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Developed AI and deep learning models for real-world applications, including image classification and object detection.</li>
+                        <li>Built projects such as CNN-based classifiers, Dog vs Cat classification, AI self-driving car simulations, obstacle avoidance systems, and credit card fraud detection.</li>
+                        <li>Implemented machine learning pipelines using Python, TensorFlow, and OpenCV.</li>
+                        <li>Collaborated with teams to fine-tune AI models and optimize performance for real-world use cases.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+                    <p><strong>University:</strong> Arka Jain University | <strong>Graduation Year:</strong> 2026</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li>Graduated with distinction (CGPA: 8.5/10).</li>
+                        <li>Selected for the AIML specialization seat in my batch.</li>
+                        <li>Organized multiple technical and non-technical events.</li>
+                        <li>Regular participant in co-curricular activities such as programming competitions, hackathons, sports, and singing.</li>
+                        <li>Active member of the college drama club.</li>
+                        <li>Active in the college gym, participating in powerlifting and bodybuilding competitions.</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>Certification in DCA (Diploma in Computer application)</h3>
+                    <p><strong>Institution:</strong> GMIIT | <strong>Year:</strong> 2022</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li>Learned MS Office, including Word, Excel, and PowerPoint.</li>
+                        <li>Gained proficiency in Command Prompt (CMD) operations.</li>
+                        <li>Developed a strong understanding of basic computing concepts.</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>Certification in Effective Communication</h3>
+                    <p><strong>Institution:</strong> Coursera | <strong>Year:</strong> 2024</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li>Developed strong communication skills in writing.</li>
+                        <li>Learned effective design principles for impactful presentations.</li>
+                        <li>Enhanced ability to create clear and engaging presentations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Let's Connect Section -->
+    <main>
+        <section class="connect">
+            <h1>Contact Us / Login</h1>
+
+            <div class="connect-content">
+                <!-- Left Side: Contact Form Section -->
+                <div class="left-side">
+                    <h2>Send us your Queries</h2>
+                    <form action="/submit-query" method="POST" class="contact-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right Side: Login/Signup Section -->
+                <div class="right-side">
+                    <h2 id="form-title">Login to Connect</h2>
+
+                    <!-- Social Login Buttons -->
+                    <button class="social-login-btn google">
+                        <i class="fab fa-google"></i> Login with Google
+                    </button>
+
+                    <button class="social-login-btn facebook">
+                        <i class="fab fa-facebook"></i> Login with Facebook
+                    </button>
+
+                    <button class="social-login-btn x">
+                        <i class="fab fa-twitter"></i> Login with X (Twitter)
+                    </button>
+
+                    <button class="social-login-btn linkedin">
+                        <i class="fab fa-linkedin"></i> Login with LinkedIn
+                    </button>
+
+                    <!-- Email/Password Login & Sign Up Form -->
+                    <form action="/login" method="POST" class="email-login" id="login-form">
+                        <label for="email-login">Email</label>
+                        <input type="email" id="email-login" name="email" required>
+
+                        <label for="password-login">Password</label>
+                        <input type="password" id="password-login" name="password" required>
+
+                        <button type="submit">Login</button>
+                        <p><a href="#" id="forgot-password">Forgot Password?</a></p>
+                        <p>Don't have an account? <a href="#" id="toggle-signup">Sign Up</a></p>
+                    </form>
+
+                    <!-- Sign Up Form (Hidden Initially) -->
+                    <form action="/signup" method="POST" class="email-login" id="signup-form" style="display: none;">
+                        <label for="name-signup">Full Name</label>
+                        <input type="text" id="name-signup" name="name" required>
+
+                        <label for="email-signup">Email</label>
+                        <input type="email" id="email-signup" name="email" required>
+
+                        <label for="password-signup">Password</label>
+                        <input type="password" id="password-signup" name="password" required>
+
+                        <button type="submit">Sign Up</button>
+                        <p>Already have an account? <a href="#" id="toggle-login">Login</a></p>
+                    </form>
+
+                    <!-- Forgot Password Form (Hidden Initially) -->
+                    <form action="/forgot-password" method="POST" class="email-login" id="forgot-password-form" style="display: none;">
+                        <label for="email-forgot">Enter your email</label>
+                        <input type="email" id="email-forgot" name="email" required>
+
+                        <button type="submit">Send Reset Link</button>
+                        <p><a href="#" id="back-to-login">Back to Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Sign In / Sign Up Toggle -->
+    <script>
+        document.getElementById('toggle-signup').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Sign Up";
+        });
+
+        document.getElementById('toggle-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Login to Connect";
+        });
+
+        document.getElementById('forgot-password').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'block';
+            document.getElementById('form-title').innerText = "Reset Password";
+        });
+
+        document.getElementById('back-to-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Login to Connect";
+        });
+    </script>
+
+</body>
+
+
+    
+    <!-- Main AI Tools Section -->
+    <main>
+        <section class="ai-tools">
+            <h1>AI Tools</h1>
+            <p>Explore the following AI tools to enhance your work and creativity:</p>
+
+            <!-- AI Tools Cards -->
+            <div class="ai-tools-container">
+                <!-- GPT-3 Playground -->
+                <div class="ai-tool-card">
+                    <h2>GPT-3 Playground</h2>
+                    <p>Explore and test the capabilities of OpenAI's GPT-3 model.</p>
+                    <a href="https://beta.openai.com/playground/" target="_blank" class="btn">Visit Tool</a>
+                </div>
+
+                <!-- DeepAI Image Generator -->
+                <div class="ai-tool-card">
+                    <h2>DeepAI Image Generator</h2>
+                    <p>Create images from text using DeepAI's powerful AI image generation tool.</p>
+                    <a href="https://deepai.org/machine-learning-model/text2img" target="_blank" class="btn">Visit Tool</a>
+                </div>
+
+                <!-- Runway ML -->
+                <div class="ai-tool-card">
+                    <h2>Runway ML</h2>
+                    <p>Runway ML offers creative AI tools for artists and designers.</p>
+                    <a href="https://runwayml.com/" target="_blank" class="btn">Visit Tool</a>
+                </div>
+
+                <!-- Google Cloud AI -->
+                <div class="ai-tool-card">
+                    <h2>Google Cloud AI</h2>
+                    <p>Explore Google's AI and machine learning tools for your projects.</p>
+                    <a href="https://cloud.google.com/products/ai" target="_blank" class="btn">Visit Tool</a>
+                </div>
+
+                <!-- IBM Watson -->
+                <div class="ai-tool-card">
+                    <h2>IBM Watson</h2>
+                    <p>IBM Watson offers a range of AI tools, from natural language processing to visual recognition.</p>
+                    <a href="https://www.ibm.com/watson" target="_blank" class="btn">Visit Tool</a>
+                </div>
+
+                <!-- PDF Editors -->
+                <div class="ai-tool-card">
+                    <h2>PDF Editor AI Tools</h2>
+                    <p>Edit and manipulate PDFs using AI-powered PDF editors.</p>
+                    <a href="https://www.ilovepdf.com/" target="_blank" class="btn">Visit Tool (iLovePDF)</a>
+                    <a href="https://www.adobe.com/acrobat/online/pdf-editor.html" target="_blank" class="btn">Visit Tool (Adobe PDF Editor)</a>
+                </div>
+
+                <!-- Image and Video Editors -->
+                <div class="ai-tool-card">
+                    <h2>AI Image/Video Editors</h2>
+                    <p>Enhance and create stunning images and videos using AI-powered tools.</p>
+                    <a href="https://deepart.io/" target="_blank" class="btn">Visit Tool (DeepArt)</a>
+                    <a href="https://www.runwayml.com/" target="_blank" class="btn">Visit Tool (Runway ML - Video Editor)</a>
+                    <a href="https://www.remove.bg/" target="_blank" class="btn">Visit Tool (Remove Background)</a>
+                </div>
+
+                <!-- Voice Generator/Cloner -->
+                <div class="ai-tool-card">
+                    <h2>AI Voice Generators & Cloners</h2>
+                    <p>Generate or clone voices using AI-powered tools.</p>
+                    <a href="https://www.descript.com/overdub" target="_blank" class="btn">Visit Tool (Descript - Overdub)</a>
+                    <a href="https://voxygen.fr/en/voice-cloning/" target="_blank" class="btn">Visit Tool (Voxygen - Voice Cloning)</a>
+                    <a href="https://www.uberduck.ai/" target="_blank" class="btn">Visit Tool (Uberduck.ai - Voice Cloning)</a>
+                </div>
+
+                <!-- Add More AI Tools Below -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Sonu Kumar Sharma. All rights reserved.</p>
+            <div class="social-footer">
+                <a href="https://www.facebook.com/share/18WDgPBbRF/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/sonu-kumar-sharma-ab8a07260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/imsonusks14?igsh=MTJ4Z2hhYXU3dDF3dA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/imsonusks?t=FNJSRGlznK285-O2uCi8Ww&s=09"><i class="fa-brands fa-x"></i></a>
+                <a href="https://github.com/Golu1464"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Typed JS for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        // Toggle Navbar for Mobile View
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        // Typed.js effect for skills
+        var typed = new Typed(".input", {
+            strings: ["Software Engineer", "AI/ML Enthusiast", "Web Developer", "Python/Java/C++ Programmer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+    <!-- <script>
+        async function fetchProjects() {
+          try {
+            let response = await fetch("https://your-backend-url.com/projects");
+            let projects = await response.json();
+            const container = document.querySelector(".project-cards-container");
+            container.innerHTML = ""; // Clear existing content
+            projects.forEach(project => {
+              container.innerHTML += `
+                <div class="project-card">
+                  <img src="${project.imageUrl}" alt="${project.title}">
+                  <div class="project-info">
+                    <h2>${project.title}</h2>
+                    <p>${project.description}</p>
+                    <a href="${project.githubLink}" target="_blank" class="btn">View Project</a>
+                  </div>
+                </div>
+              `;
+            });
+          } catch (error) {
+            console.error("Error fetching projects:", error);
+          }
+        }
+        
+        // Call the function when the page loads
+        fetchProjects();
+      </script> -->
+      <script>
+        document.getElementById("contact-form").addEventListener("submit", async function(event) {
+          event.preventDefault();  // Prevent the default form submission
+          const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+      
+          try {
+            let response = await fetch("https://your-backend-url.com/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData)
+            });
+      
+            let result = await response.json();
+            document.getElementById("form-status").innerText = result.message;
+            document.getElementById("contact-form").reset();
+          } catch (error) {
+            document.getElementById("form-status").innerText = "Error sending message. Please try again.";
+            console.error("Error:", error);
+          }
+        });
+      </script>
+       <!-- JavaScript for Sign In / Sign Up Toggle -->
+    <script>
+        document.getElementById('toggle-signup').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Sign Up";
+        });
+
+        document.getElementById('toggle-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Login to Connect";
+        });
+
+        document.getElementById('forgot-password').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'block';
+            document.getElementById('form-title').innerText = "Reset Password";
+        });
+
+        document.getElementById('back-to-login').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('form-title').innerText = "Login to Connect";
+        });
+    </script>
+    <!-- Tidio Chatbot Code -->
+<!-- <script src="//code.tidio.co/your-unique-code.js" async></script> -->
+<div id="chat-window">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+  
+  <script>
+    // Toggle the chat window open/close when clicking on the chat icon (excluding the inner elements)
+    document.getElementById("chat-window").addEventListener("click", function(e) {
+      if (e.target.id !== "send-btn" && e.target.id !== "chat-input") {
+        this.classList.toggle("open");
+      }
+    });
+    
+    // Handle send button click to send chat message
+    document.getElementById("send-btn").addEventListener("click", async function(e) {
+      e.stopPropagation();  // Prevent triggering the toggle event on the chat window
+      const inputEl = document.getElementById("chat-input");
+      const message = inputEl.value.trim();
+      if (!message) return;
+      
+      // Append user message to chat window
+      const chatMessages = document.getElementById("chat-messages");
+      chatMessages.innerHTML += `<div class="user-message">${message}</div>`;
+      
+      // Clear the input field
+      inputEl.value = "";
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      
+      // Send message to your backend endpoint (make sure "/api/chat" is set up in your backend)
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message })
+        });
+        
+        const data = await response.json();
+        // Append bot response to chat window
+        chatMessages.innerHTML += `<div class="bot-message">${data.reply}</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      } catch (error) {
+        console.error("Error sending message:", error);
+        chatMessages.innerHTML += `<div class="bot-message">Error: Unable to get response.</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    });
+  </script>
+  
+</body>
+</html>
