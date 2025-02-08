@@ -1,0 +1,904 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0 10px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+nav .navlinks {
+    list-style-type: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav .navlinks li a:hover {
+    color: #007ced;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 2rem; /* Adds space between the image and text */
+    padding-top: 4rem; /* Restored correct top padding */
+    padding-bottom: 4rem; /* Ensures proper spacing */
+}
+
+.container .hero-pic {
+    width: 320px;  /* Slightly increased size */
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #00eaff; /* Neon cyan border */
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.8); /* Glowing effect */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-right: 20px; /* Increased space between image and text */
+}
+
+.hero-pic img {
+    width: 110%; /* Slight zoom-in */
+    height: 110%;
+    object-fit: cover; /* Ensure proper fit */
+    transform: scale(1.1); /* Zoom in */
+    transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.hero-pic:hover {
+    transform: scale(1.1); /* Slight zoom-out effect */
+    box-shadow: 0 0 30px rgba(0, 234, 255, 1); /* Increased glow */
+}
+
+.hero-pic img:hover {
+    transform: scale(1.2); /* Slightly more zoom-in on hover */
+    filter: brightness(1.2) contrast(1.1); /* Enhance brightness */
+}
+
+
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h5 {
+    color: #e5e5e5;
+    font-size: 14px;
+}
+
+.hero-text h5 span {
+    color: #007ced;
+    font-size: 16px;
+}
+
+.hero-text h1 {
+    color: #007ced;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #e5e5e5;
+}
+
+.btn-group {
+    margin: 45px 0;
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-group .btn:hover {
+    background-color: #007ced;
+    transform: scale(1.05);
+}
+
+.btn.active {
+    border-color: #007ced;
+}
+
+.hero-text .social i {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.hero-text .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+/* Responsive design & displaying navbar for small screen */
+@media (max-width: 930px) {
+    nav .togglebtn {
+        display: initial;
+    }
+
+    /* For toggle button */
+    .click {
+        top: 45px;
+    }
+
+    .click span {
+        position: absolute;
+        margin-top: 12px;
+    }
+
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav .navlinks {
+        position: absolute;
+        top: 110px;
+        right: -100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+
+    nav .navlinks li {
+        display: block;
+    }
+
+    nav .navlinks li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    nav .navlinks.open {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .hero-text {
+        padding: 40px 0px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+}
+footer {
+    background-color: #222;
+    color: #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-footer {
+    margin-top: 10px;
+}
+
+.social-footer a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.social-footer a:hover {
+    color: #007ced;
+}
+/* Existing styles ... */
+
+/* Projects Section */
+.projects {
+    height: fit-content;
+    width: 100%;
+    padding: 50px 5%;
+    text-align: center;
+    background: #222;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+    
+}
+
+/* Section Title */
+.projects h1 {
+    font-size: 3rem;
+    color: #00eaff;
+    margin-bottom: 40px;
+}
+
+/* Project Cards Container */
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+    width: 300px;
+    height: 350px;
+    background-color: #222;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 234, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Project Info - Initially Hidden */
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Project Title */
+.project-info h2 {
+    color: #00eaff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Project Description */
+.project-info p {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+/* Project Button */
+.project-info .btn {
+    background-color: #00eaff;
+    color: #111;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-info .btn:hover {
+    background-color: #0088cc;
+}
+
+/* Hover Effect - Image Moves Up, Info Appears */
+.project-card:hover img {
+    transform: translateY(-100px);
+}
+
+.project-card:hover .project-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-card {
+        width: 280px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-cards-container {
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+}
+/* Footer */
+footer {
+    background-color: #222;
+    color: #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Career Section - Full-Screen Dark Theme (Professional) */
+
+.career {
+    margin-top: 0;
+    padding-top: 20px;
+    width: 100%; /* Full width */
+    /* min-height: 100vh; Ensures it covers the full screen height */
+    padding: 50px 8%; /* Balanced spacing */
+    text-align: center;
+    background: #222; /* Dark background */
+    color: #e5e5e5; /* Light text */
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -50px; */
+    justify-content: flex-start;
+    box-shadow: 0 0 20px 5px #00eaff;
+}
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+} */
+/* Career Heading */
+.career h1 {
+    font-size: 3rem;
+    color: #fff; /* White for professional contrast */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Experience & Education Items */
+.experience-item, .education-item {
+    background-color: #222; /* Dark background for items */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    text-align: left; /* Left-align for professional readability */
+    border-left: 5px solid #00eaff; /* Blue accent on left */
+}
+
+/* Headings for Sections */
+.experience-item h3, .education-item h3 {
+    font-size: 1.8rem;
+    color: #00eaff; /* Glowing Cyan Accent */
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.experience-item p, .education-item p {
+    color: #bbb; /* Light gray text */
+    font-size: 1rem;
+    line-height: 1.6; /* Improved readability */
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    color: #ddd;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer Links */
+.social-footer a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.social-footer a:hover {
+    color: #00eaff; /* Glowing Cyan on hover */
+}
+
+
+/* Let's Connect Section - Dark Theme */
+.connect {
+    width: 100%; /* Full width of the screen */
+    padding: 50px 5%; /* Padding for some space from the edges */
+    text-align: center;
+    background-color: #222; /* Dark background */
+    color: #e5e5e5; /* Light text color */
+    margin: 0;
+    box-shadow: 0 0 20px 5px #00eaff;
+}
+
+/* Container for Left (Contact Form) and Right (Login) Sections */
+.connect-content {
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: flex-start; /* Align items to the top */
+    gap: 30px; /* Space between left and right sections */
+}
+
+/* Left Section (Contact Form) */
+.left-side {
+    flex: 1; /* Take up remaining space */
+    text-align: left; /* Align text to the left */
+    padding-right: 30px; /* Optional: Space between form and image */
+}
+
+/* Right Section (Login Section) */
+.right-side {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align login buttons vertically */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Social Login Button Styling */
+.social-login-btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007ced; /* Neon blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Heading Styling */
+.connect h1 {
+    font-size: 3rem;
+    color: #00eaff; /* Neon cyan color for the heading */
+    margin-bottom: 40px;
+}
+
+/* Sub-heading or other headings inside the connect section */
+.connect h2, .connect h3 {
+    color: #e5e5e5; /* Light color for sub-headings */
+}
+
+.social-login-btn:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+}
+
+.social-login-btn i {
+    margin-right: 8px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #333; /* Darker background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for form */
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background */
+    color: #e5e5e5; /* Light text color */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007ced; /* Neon blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+}
+
+/* Styling for Email/Password Login Form */
+.email-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e5e5e5; /* Light text color */
+}
+
+.email-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007ced;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-login button:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+}
+/* Add margin between buttons */
+#forgot-password, #toggle-signup, #toggle-login {
+    margin-bottom: 15px; /* Space between buttons */
+}
+
+/* Forgot Password Link Styling */
+#forgot-password {
+    display: inline-block;
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Sign Up Link Styling */
+#toggle-signup, #toggle-login {
+    font-size: 14px;
+    color: #00eaff;
+    text-decoration: none;
+}
+
+#toggle-signup:hover, #toggle-login:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #222;
+    color: #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* AI Tools Page Styling - Dark Theme */
+.ai-tools {
+    width: 100vw;  /* Full width of the screen */
+    padding: 50px 5%; /* Adds spacing from the edges */
+    text-align: center;
+    background: #222; /* Dark background */
+    color: #e5e5e5; /* Light text color */
+    box-shadow: 0 0 20px 5px #00eaff;
+}
+
+/* Heading Styling */
+.ai-tools h1 {
+    font-size: 3rem;
+    color: #00eaff; /* Neon cyan */
+    margin-bottom: 40px;
+}
+
+/* Paragraph Styling */
+.ai-tools p {
+    font-size: 1.2rem;
+    color: #bbb; /* Lighter gray */
+    margin-bottom: 30px;
+}
+
+/* AI Tools Container */
+.ai-tools-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* AI Tool Card Styling */
+.ai-tool-card {
+    background-color: #222; /* Dark background */
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px; /* Slightly more rounded edges */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* AI Tool Card Heading */
+.ai-tool-card h2 {
+    color: #00eaff; /* Neon cyan */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* AI Tool Card Paragraph */
+.ai-tool-card p {
+    color: #bbb; /* Light gray */
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* AI Tool Card Button */
+.ai-tool-card .btn {
+    display: inline-block;
+    background-color: #007ced; /* Neon blue */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.ai-tool-card .btn:hover {
+    background-color: #005fa3; /* Darker blue when hovered */
+}
+
+/* Hover Effect for AI Tool Cards */
+.ai-tool-card:hover {
+    transform: translateY(-10px); /* Slight zoom-in effect */
+    box-shadow: 0 15px 25px rgba(0, 234, 255, 0.4); /* Glowing shadow effect */
+}
+
+footer {
+    background-color: #222;
+    color: #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+/* ---------- Default (Closed) State: Chat Icon ---------- */
+#chat-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  /* Display a chat icon using a pseudo-element (Font Awesome) */
+  #chat-window::before {
+    content: "\f086";  /* FontAwesome 'comments' icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Hide the internal elements when the chat window is closed */
+  #chat-window > * {
+    display: none;
+  }
+  
+  /* ---------- Open State: Expanded Chat Window ---------- */
+  #chat-window.open {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    flex-direction: column;
+  }
+  
+  /* Hide the pseudo-element (icon) when open */
+  #chat-window.open::before {
+    display: none;
+  }
+  
+  /* Display internal content when open */
+  #chat-window.open > * {
+    display: block;
+  }
+  
+  /* ---------- Chat Window Internal Styling ---------- */
+  /* Messages container */
+  #chat-messages {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Input field */
+  #chat-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Send button */
+  #send-btn {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for user messages */
+  .user-message {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  /* Styling for bot messages */
+  .bot-message {
+    background-color: #e9ecef;
+    color: #333;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: left;
+  }
